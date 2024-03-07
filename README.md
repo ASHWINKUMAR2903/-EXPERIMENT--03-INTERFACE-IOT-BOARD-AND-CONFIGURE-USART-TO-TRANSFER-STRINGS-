@@ -64,10 +64,9 @@ PUTCHAR_PROTOTYPE
 
 
 ## Output screen shots of Serial port utility   :
- 
- ![310914002-7c48f4cf-cbda-4b0f-aeb7-1c05a368addd](https://github.com/ASHWINKUMAR2903/-EXPERIMENT--03-INTERFACE-IOT-BOARD-AND-CONFIGURE-USART-TO-TRANSFER-STRINGS-/assets/119407186/84868d9e-1e0c-4920-a5d7-63cd81424085)
 
- 
+ ![output](https://github.com/ASHWINKUMAR2903/-EXPERIMENT--03-INTERFACE-IOT-BOARD-AND-CONFIGURE-USART-TO-TRANSFER-STRINGS-/assets/119407186/30cf367a-fc17-456d-90ba-47cfb07daccc)
+
  
 ## Result :
 configuring and usart is accomplished and string data is visualized on the serial port utilty

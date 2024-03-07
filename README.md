@@ -1,9 +1,7 @@
-
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  DATE: 27 - 02 - 2024
+###  NAME: A.ASHWIN KUMAR
+###  ROLL NO : 212222100006
+###  DEPARTMENT: CSE(Cyber Securtiy)
 
 # EXPERIMENT--04-INTERFACING IOT DEVELOPMENT BOARD AND CONFIGURE USART FOR TRANSFERRING STRINGS 
 ## Aim: To Interface iot development board for configuring the the usart and transfer strings though it 
@@ -22,32 +20,53 @@ configure in the usart 2 as asynchronous mode and set the baud rate as 115200 as
 2.click on cntrl+S , automaticall C program will be generated 
 ![image](https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png)
 ![image](https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png)
-8. edit the program and as per required 
+3. edit the program and as per required 
 ![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
 
-3. use project and build all 
+4. use project and build all 
 ![image](https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png)
-10. once the project is bulild 
+5. once the project is bulild 
 ![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
 
-4. click on debug option 
+6. click on debug option 
 ![image](https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png)
 
-5 connect the  ARM board to power supply and usb 
+7. connect the  ARM board to power supply and usb 
 
+8. check for execution of the output using run option
 
-6. check for execution of the output using run option
-7. Opend serial port utility and check the outpu t
-
-
+9. Opend serial port utility and check the output
 
 ## STM 32 CUBE PROGRAM :
+```
+#include "main.h"
 
+#if defined (_ICCARM_) || defined (__ARMCC_VERSION)
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#elif defined(_GNUC_)
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#endif
+
+int main(void)
+{
+while (1)
+  {
+	  	printf("INTODUCTION TO IOT\n");
+	  	HAL_Delay(500);
+  }
+}
+PUTCHAR_PROTOTYPE
+{
+	HAL_UART_Transmit(&huart2,(uint8_t*) &ch,1,0xFFFF);
+	return ch;
+}
+```
 
 
 ## Output screen shots of Serial port utility   :
  
- 
+ ![310914002-7c48f4cf-cbda-4b0f-aeb7-1c05a368addd](https://github.com/ASHWINKUMAR2903/-EXPERIMENT--03-INTERFACE-IOT-BOARD-AND-CONFIGURE-USART-TO-TRANSFER-STRINGS-/assets/119407186/84868d9e-1e0c-4920-a5d7-63cd81424085)
+
  
  
 ## Result :
